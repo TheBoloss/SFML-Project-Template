@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     std::cout << "Hello World" << std::endl;
     sf::ContextSettings settings;
     settings.antialiasingLevel = 4;
-    sf::RenderWindow window(sf::VideoMode(1920, 1080), "Tutorial", sf::Style::Close, settings);
+    sf::RenderWindow window(sf::VideoMode(800, 600), "SFML & ImGUI", sf::Style::Close, settings);
     settings = window.getSettings();
     std::cout << SFML_VERSION_MAJOR << "." << SFML_VERSION_MINOR << "." << SFML_VERSION_PATCH << std::endl;
     std::cout << settings.majorVersion << "." << settings.minorVersion << std::endl;
