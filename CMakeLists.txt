@@ -2,8 +2,8 @@
 cmake_minimum_required(VERSION 3.1)
 
 IF (WIN32)
-    set(CMAKE_C_COMPILER C:/msys64/mingw64/bin/gcc.exe)
-    set(CMAKE_CXX_COMPILER C:/msys64/mingw64/bin/g++.exe)
+    set(CMAKE_C_COMPILER gcc.exe)
+    set(CMAKE_CXX_COMPILER g++.exe)
     # this makes sure that .dll-files are build into build/ folder
     set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/build)
 ELSEIF (APPLE)
@@ -48,4 +48,4 @@ target_link_libraries(${PROJECT_NAME} PRIVATE ImGui-SFML::ImGui-SFML)
 # configure_file(res/OpenSans-Regular.ttf OpenSans-Regular.ttf COPYONLY)
 
 # Set "a" to be the output filename, does not really matter, shorter is quicker to type...
-set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "a")
+set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "app")
